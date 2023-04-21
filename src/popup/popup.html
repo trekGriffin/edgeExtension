@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>choose your proxy</title>
+  </head>
+  <style>
+    * {
+      font-size: 16px;
+    }
+    .middle {
+      text-align: center;
+      gap: 2px;
+    }
+    button {
+      margin: 2px;
+      width: 80%;
+    }
+  </style>
+  <body>
+    <div class="middle">
+      <fieldset>
+        <legend>input http proxy:</legend>
+        <form id="proxyform">
+          <input name="proxy" />
+          <button>confirm</button>
+        </form>
+      </fieldset>
+      <p>current proxy setting is:</p>
+      <p id="proxyinfo"></p>
+
+      <hr />
+
+      <fieldset>
+        <legend>input bypass domain:</legend>
+        <form id="bypassform">
+          <input name="bypass" />
+          <button>add</button>
+        </form>
+      </fieldset>
+      <p>current bypass list contains:</p>
+      <p id="bypassinfo"></p>
+
+      <hr />
+      <button id="test">test</button>
+      <p id="testInfo" style="overflow: auto; height: 40px;"></p>
+    </div>
+  </body>
+  <script src="./popup.js"></script>
+</html>

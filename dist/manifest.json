@@ -1,0 +1,26 @@
+{
+    "name": "proxy",
+    "version": "23.10421.1",
+    "manifest_version": 3,
+    "description": "some environment won't let you browse, unless you specify a proxy.",
+    "icons": {
+        "48": "icons/splash.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "declarative_net_request" : {
+        "rule_resources" : [{
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules_1.json"
+        }
+        ]},
+ 
+    "permissions": [
+        "proxy",
+        "storage",
+        "declarativeNetRequest"
+      ]
+
+}
